@@ -1,1 +1,6 @@
 JavaScript é uma linguagem de programação que permite criar páginas web interativas
+É uma linguagem leve, interpretada e baseada em objetos
+É amigável para iniciantes
+É versátil e pode ser usada para criar jogos, gráficos, aplicativos e muito mais
+É compatível com a maioria dos navegadores
+Permite a criação de páginas interativas, como calculadoras, tabelas e agendas em formulários git commit -m "Detalhamentos em Javascript”
