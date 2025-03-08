@@ -1,0 +1,13 @@
+requisitos funcionais:
+consulta
+disponibilidade de livros
+demanda dos livros
+distribuição de livros
+o prazo para entregar o livro
+
+
+requisitos não funcionais:
+cadastro (com email)
+documentação
+se o livro foi entregue
+se houve devolução

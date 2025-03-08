@@ -1,0 +1,59 @@
+1- 
+cd Desktop
+md projeto_incial
+cd projeto_incial
+md html
+md css
+md js
+md assets
+
+2-
+cd css
+cd js
+cd assets
+cd html
+
+3-
+cd html
+md index.html
+echo Bem-vindo ao Projeto Inicial. > index.html
+
+4-
+cd..
+cd..
+cd assets
+md fonts
+md imgs
+move C:style.cass > C:cass
+
+
+5-
+echo body  body { font-family: Arial, sans-serif; background-color: beige} > css
+
+6-
+cs..
+cd assets
+dir
+
+7-
+cd..
+cd js
+md scripts.js
+md  console.log("Script carregado!"); e "app.js" com o texto console.log("Aplicação Iniciada!");
+
+8-
+cd..
+cd html
+copy C:index.html C:assets
+
+9-cd..
+rename app.js main.js
+
+10-cd..
+dir
+
+11-
+cd assets
+rd index.html
+
+12-feito
