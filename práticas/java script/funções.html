@@ -6,74 +6,70 @@
     <title>Exemplo de Funções</title>
 </head>
 <body>
+
     <script>
-        
+
         function saudacao(){
             console.log("Olá mundo!");
         }
 
-        saudacaoComArgumento(nome);{
-            console.log ("Olá mundo! Eu sou" + nome);
+        saudacao();
+
+        function saudacaoComArgumento(nome){
+            console.log("Olá mundo! Eu sou " + nome);
         }
 
-        saudacaoComArgumento("Lucas")
-        saudacaoComArgumento("Maria")
+        saudacaoComArgumento("Lucas");
+        saudacaoComArgumento("Maria");
 
-        function saudacaoComArgOpcional(nome, saudacao= "Olá"){
-            console.log(saudacao + "," + nome);
+        function saudacaoComArgOpcional(nome, saudacao = "Olá"){
+            console.log(saudacao + ", "+ nome);
         }
 
-        saudacaoComArgOpcional ("Lucas");
-        saudacaoComArgOpcional ("Maria", "Oi");
+        saudacaoComArgOpcional("Lucas");
+        saudacaoComArgOpcional("Maria", "Oi");
 
-        function somar (numero1, numero2){
-            console.log (numero1 + numero2)
+        function somar(numero1, numero2){
+            console.log(numero1 + numero2);
         }
 
         somar(5,2);
         somar(3,5);
 
-        function somarretorno(numero1, numero2){
-            return (numero1 + numero2)
+        function somarRetorno(numero1, numero2){
+            return (numero1 + numero2);
         }
 
-        var soma = somarretorno (5,2);
+        var soma = somarRetorno(5,2);
         console.log(soma);
 
-        function media (n1,n2,n3){
-            return (n1+n2+n3/3);
+        function media(n1,n2,n3){
+            return ((n1+n2+n3)/3);
         }
 
-        console.log(media(10,10,10))
+        console.log(media(10,10,10));
 
         var m = media(10,10,10);
-        if (m > 7){
+        if(m > 7){
             console.log("passou");
         }else{
             console.log("até o ano que vem!")
         }
 
+        //nota >= 7 e as faltas <= 4
+        function verificarAprovacao(n1,n2,n3,numFaltas){
+            var media = (n1+n2+n3)/3
+            if (media >=7 && numFaltas <= 4)
+            return "Aprovado";
+            else {
+            return "Reprovado";
+        }
+        }
+
+        console.log("Situação: ", verificarAprovacao(10,8,5,3));
+        console.log("Situação: ", verificarAprovacao(10,8,5,5));
+        console.log("Situação: ", verificarAprovacao(5,4,5,0));
+
+       
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-</body>
-</html>
