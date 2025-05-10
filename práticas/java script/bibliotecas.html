@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+
+        //Biblioteca Math
+
+        // Início Biblioteca Math
+          var numero = 10.5;
+        console.log("Valor original",numero)
+        console.log("Arredondamento para baixo", Math.floor (numero));
+        console.log ("Arredodamento para cima", Math.ceil (numero));
+        console.log ("Arredontamento para o mais próximo", Math.round (numero))
+
+        var array = [10,20,30,40,50]
+        console.log ("Maior valor", Math.max(array));
+        console.log ("Maior valor 2", Math.max (10,20,30,40,50));
+        console.log ("Menor valor", Math.min(array));
+        console.log ("Menor valor2", Math.min(10,20,30,40,50))
+        
+        console.log ("Raiz sem biblioteca", 16**0.5);
+        console.log ("Raiz com biblioteca", Math.sqrt((16)));
+        var num = 16;
+        console.log ("Raiz com biblioteca", Math.sqrt(num))
+
+        console.log ("Potência sem biblioteca", 2 ** 3);
+        console.log ("Potência com biblioteca", Math)
+
+        console.log("Valor de PI", Math.PI);
+        console.log ("Valor de PI", Math.PI.toFixed(2))
+        
+        // Fim Biblioteca Math
+        
+        // Início Biblioteca Date
+
+        var data = new Date();
+        console.log ("Data Atual", data);
+        console.log ("Dia", data.getDate());
+        console.log ("Mês", data.getMonth ()+1);
+        console.log ("Ano", data.getFullYear());
+        console.log("Hora", data.getHours());
+        console.log("Minuto", data.getMinutes());
+        console.log("Segundos", data.getSeconds());
+        console.log ("Dia da semana", data.getDay());
+
+        // Biblioteca Jquery
+
+        $("h1"),CSS ("color","blue");
+
+        $("h1").css({
+            "color" : "red",
+            "font-family" : "Arial",
+            "fonte-size"  : "100px",
+            "text-align"  : "center" })
+
+
+        
+        
+        </script>
+</body>
+</html>
