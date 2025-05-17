@@ -1,66 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercícios de Operadores em JavaScript</title>
 </head>
+
 <body>
+
+    <h1>Exercícios de Operadores em JavaScript</h1>
+    <script
     
-</body>
-</html>
+    // 1) Soma de dois números
+    var numero1Ex1 = parseFloat(prompt("Exercício 1 - Digite o primeiro número:"));
+    var numero2Ex1 = parseFloat(prompt("Exercício 1 - Digite o segundo número:"));
+    var soma = numero1Ex1 + numero2Ex1;
+    console.log(`A soma de ${numero1Ex1} e ${numero2Ex1} é: ${soma}`);
 
-<script>
-    //1. adição
+    // 2) Diferença entre dois números
+    var numero1Ex2 = parseFloat(prompt("Exercício 2 - Digite o primeiro número:"));
+    var numero2Ex2 = parseFloat(prompt("Exercício 2 - Digite o segundo número:"));
+    var diferenca = numero1Ex2 - numero2Ex2;
+    console.log(`A diferença entre ${numero1Ex2} e ${numero2Ex2} é: ${diferenca}`);
 
-var adição1 = prompt ("Informe o primeiro valor");
-var adição2 = prompt ("Informe o seu segundo valor")
-console.log (parseInt) (adição1) + (adição2);
+    // 3) Multiplicação de dois números
+    var numero1Ex3 = parseFloat(prompt("Exercício 3 - Digite o primeiro número:"));
+    var numero2Ex3 = parseFloat(prompt("Exercício 3 - Digite o segundo número:"));
+    var multiplicacao = numero1Ex3 * numero2Ex3;
+    console.log(`A multiplicação de ${numero1Ex3} e ${numero2Ex3} é: ${multiplicacao}`);
 
-//2. subtração
+    // 4) Divisão de dois números
+    var numero1Ex4 = parseFloat(prompt("Exercício 4 - Digite o primeiro número:"));
+    var numero2Ex4 = parseFloat(prompt("Exercício 4 - Digite o segundo número:"));
+    var divisao = numero1Ex4 / numero2Ex4;
+    console.log(`A divisão de ${numero1Ex4} por ${numero2Ex4} é: ${divisao}`);
 
-var subtração1 = prompt ("Informe o primeiro valor");
-var subtração2 = promt ("Informe o segundo valor");
-console.log (parseInt) (subtração1) - (subtração2);
+    // 5) Resto da divisão entre dois números
+    var numero1Ex5 = parseFloat(prompt("Exercício 5 - Digite o primeiro número:"));
+    var numero2Ex5 = parseFloat(prompt("Exercício 5 - Digite o segundo número:"));
+    var resto = numero1Ex5 % numero2Ex5;
+    console.log(`O resto da divisão de ${numero1Ex5} por ${numero2Ex5} é: ${resto}`);
 
-//3. multiplicação
+    // 6) Incremento em 1
+    var numeroEx6 = parseFloat(prompt("Exercício 6 - Digite um número:"));
+    var incremento = numeroEx6 + 1;
+    console.log(`${numeroEx6} aumentado em 1 é: ${incremento}`);
 
-var multiplicacao1 = promt ("Informe o primeiro valor");
-var multiplicacao2 = promt ("Informe o seundo valor");
-console.log (parseInt) (multiplicacao1) * multiplicacao2;
+    // 7) Decremento em 1
+    var numeroEx7 = parseFloat(prompt("Exercício 7 - Digite um número:"));
+    var decremento = numeroEx7 - 1;
+    console.log(`${numeroEx7} diminuído em 1 é: ${decremento}`);
 
-//4. divisão
+    // 8) Soma de três números
+    var numero1Ex8 = parseFloat(prompt("Exercício 8 - Digite o primeiro número:"));
+    var numero2Ex8 = parseFloat(prompt("Exercício 8 - Digite o segundo número:"));
+    var numero3Ex8 = parseFloat(prompt("Exercício 8 - Digite o terceiro número:"));
+    var somaEx8 = numero1Ex8 + numero2Ex8 + numero3Ex8;
+    console.log(`A soma de ${numero1Ex8}, ${numero2Ex8} e ${numero3Ex8} é: ${somaEx8}`);
 
-var divisao1 = prompt ("Informe o primeiro valor")
-var divisao2 = promt ("informe o segundo valor")
-console.log (parseInt) (divisao1) ÷ (divisao2)
+    // 9) Média de três números
+    var numero1Ex9 = parseFloat(prompt("Exercício 9 - Digite o primeiro número:"));
+    var numero2Ex9 = parseFloat(prompt("Exercício 9 - Digite o segundo número:"));
+    var numero3Ex9 = parseFloat(prompt("Exercício 9 - Digite o terceiro número:"));
+    var media = (numero1Ex9 + numero2Ex9 + numero3Ex9) / 3;
+    console.log(`A média de ${numero1Ex9}, ${numero2Ex9} e ${numero3Ex9} é: ${media}`);
 
-//5.modulo
+    // 10) Área de um círculo
+    var raio = parseFloat(prompt("Exercício 10 - Digite o raio do círculo:"));
+    var area = Math.PI * raio * raio;
+    console.log(`A área do círculo com raio ${raio} é: ${area.toFixed(2)}`);
 
-var modulo1 = promt ("Informe o primeiro valor")
-var modulo2 = promt ("Informe o segundo valor")
-console.log = (parseInt) (divisao1) % (divisao2)
+    // 11) Verificar idade
+    var idade = parseFloat(prompt("Exercício 11 - Digite sua idade:"));
+    var ehMaiorDeIdade = idade >= 18;
+    console.log(`É maior de idade: ${ehMaiorDeIdade}`);
 
-//6.sucessor
+    // 12) Verificar se é positivo, negativo ou zero
+    var numeroEx12 = parseFloat(prompt("Exercício 12 - Digite um número:"));
+    var ehPositivo = numeroEx12 > 0;
+    var ehNegativo = numeroEx12 < 0;
+    var ehZero = numeroEx12 === 0;
+    console.log(`O número ${numeroEx12} é positivo: ${ehPositivo}`);
+    console.log(`O número ${numeroEx12} é negativo: ${ehNegativo}`);
+    console.log(`O número ${numeroEx12} é zero: ${ehZero}`);
 
-var sucessor1 = promt ("Informe o seu valor")
-console.log (parseInt) (sucessor1)
+    // 13) Verificar se é par
+    var numeroEx13 = parseFloat(prompt("Exercício 13 - Digite um número:"));
+    var ehPar = numeroEx13 % 2 === 0;
+    console.log(`O número ${numeroEx13} é par: ${ehPar}`);
 
-//10.verdadeiro ou falso
+    // 14) Verificar se o primeiro é maior que o segundo
+    var numero1Ex14 = parseFloat(prompt("Exercício 14 - Digite o primeiro número:"));
+    var numero2Ex14 = parseFloat(prompt("Exercício 14 - Digite o segundo número:"));
+    var primeiroMaior = numero1Ex14 > numero2Ex14;
+    console.log(`${numero1Ex14} é maior que ${numero2Ex14}: ${primeiroMaior}`);
 
-var verdadeiro = true
-var false = false
-var number1 = 1
-var number2 = 2
-console.log (number1,number2)
+    // 15) Verificar se está entre 10 e 20
+    var numeroEx15 = parseFloat(prompt("Exercício 15 - Digite um número:"));
+    var entreIntervalo = numeroEx15 >= 10 && numeroEx15 <= 20;
+    console.log(`O número ${numeroEx15} está entre 10 e 20: ${entreIntervalo}`);
 
-//15. verdadeiro ou falso
-
-var veradede = true
-var falso = false
-var numero20 = 20
-var numer10 = numero20 < 10
-console.log (numero20, numer10)
-
-
-
+    
